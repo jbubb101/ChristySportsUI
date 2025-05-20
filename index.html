@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christy Sports App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#1e3a8a', // Christy Blue
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 relative pb-20">
+
+  <!-- Page Content -->
+  <div id="home" class="page-content block">
+    <!-- Hero -->
+    <div class="relative">
+      <img src="static/winter-resorts-in-michigan-downhill-skiing-67af6720bb316.webp" alt="Skier" class="w-full h-72 object-cover" />
+      <div class="absolute top-0 left-0 right-0 text-center py-4">
+        <h1 class="text-white text-2xl font-bold bg-black bg-opacity-40 inline-block px-4 py-1 rounded-full">Christy Sports</h1>
+      </div>
+      <div class="absolute bottom-6 left-4 text-white">
+        <h2 class="text-2xl font-bold">WELCOME</h2>
+        <p class="text-sm">Rent ski and snowboard equipment</p>
+        <button class="mt-3 bg-white text-brand font-semibold px-4 py-2 rounded shadow">Reserve Now</button>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="mt-6 space-y-4 px-4">
+      <div class="bg-gray-100 rounded-xl p-4 flex items-center justify-between shadow">
+        <div>
+          <h3 class="font-semibold text-brand">Service Scheduling</h3>
+          <p class="text-sm text-gray-600">Book custom fitting and repairs</p>
+        </div>
+        <span class="text-gray-400">&rarr;</span>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl p-4 flex items-center justify-between shadow">
+        <div>
+          <h3 class="font-semibold text-brand">Shop Online</h3>
+          <p class="text-sm text-gray-600">Browse our product range</p>
+        </div>
+        <span class="text-gray-400">&rarr;</span>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl p-4 flex items-center justify-between shadow">
+        <div>
+          <h3 class="font-semibold text-brand">Personalized Offers</h3>
+          <p class="text-sm text-gray-600">Discover recommendations for you</p>
+        </div>
+        <span class="text-gray-400">&rarr;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder pages -->
+  <div id="shop" class="page-content hidden p-4">
+    <h2 class="text-xl font-bold text-brand">Shop</h2>
+    <p class="text-sm mt-2">Product catalog coming soon!</p>
+  </div>
+
+  <div id="account" class="page-content hidden p-4">
+    <h2 class="text-xl font-bold text-brand">My Account</h2>
+    <p class="text-sm mt-2">Manage your reservations and profile.</p>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white shadow border-t z-10">
+    <div class="flex justify-around py-2 text-sm text-gray-500">
+      <button onclick="switchPage('home')" id="nav-home" class="flex flex-col items-center gap-1 active-nav">
+        <span>🏠</span>
+        <span>Home</span>
+      </button>
+      <button onclick="switchPage('shop')" id="nav-shop" class="flex flex-col items-center gap-1">
+        <span>🛍️</span>
+        <span>Shop</span>
+      </button>
+      <button onclick="switchPage('account')" id="nav-account" class="flex flex-col items-center gap-1">
+        <span>👤</span>
+        <span>Account</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- JS for Navigation -->
+  <script>
+    function switchPage(pageId) {
+      // Hide all pages
+      document.querySelectorAll('.page-content').forEach(el => el.classList.add('hidden'));
+      // Show selected page
+      document.getElementById(pageId).classList.remove('hidden');
+
+      // Update active nav button
+      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('text-brand', 'font-semibold'));
+      document.getElementById(`nav-${pageId}`).classList.add('text-brand', 'font-semibold');
+    }
+  </script>
+
+</body>
+</html>
