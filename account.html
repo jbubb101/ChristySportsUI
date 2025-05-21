@@ -56,11 +56,23 @@
     </div>
 
     <!-- Rewards -->
-    <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 shadow">
-      <h3 class="text-brand font-semibold text-lg mb-2">🎿 Reward Points</h3>
+    <!-- Interactive Points Card -->
+    <div onclick="toggleRedemptions()" class="bg-blue-50 border border-blue-100 rounded-xl p-4 shadow cursor-pointer">
+      <h2 class="text-lg font-semibold text-brand mb-1">🎿 Points Balance</h2>
       <p class="text-3xl font-bold text-brand">1,420</p>
-      <p class="text-sm text-gray-600 mt-1">Redeem points for discounts, rentals & perks.</p>
+      <p class="text-sm text-gray-600">Tap to view your redemption options</p>
     </div>
+
+    <!-- Redemption Options Hidden by Default -->
+    <div id="redemptionOptions" class="hidden mt-2 bg-white border border-gray-200 rounded-xl p-4 shadow">
+      <h3 class="text-md font-semibold text-brand mb-2">Available Rewards</h3>
+      <ul class="text-sm text-gray-700 space-y-2">
+        <li>• Redeem 1,000 pts for $10 Off</li>
+        <li>• Redeem 2,000 pts for Free Rental Day</li>
+        <li>• Redeem 3,000 pts for $40 Gear Voucher</li>
+      </ul>
+    </div>
+
 
     <!-- Personalized Deals -->
     <div class="space-y-3">
@@ -200,6 +212,13 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    function toggleRedemptions() {
+      const section = document.getElementById('redemptionOptions');
+      section.classList.toggle('hidden');
+    }
+  </script>
 
 </body>
 </html>
