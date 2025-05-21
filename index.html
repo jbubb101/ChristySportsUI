@@ -77,23 +77,25 @@
     <p class="text-sm mt-2">Manage your reservations and profile.</p>
   </div>
 
-  <!-- Bottom Navigation -->
+  <!-- Bottom Navigation (with redirects) -->
   <nav class="fixed bottom-0 left-0 right-0 bg-white shadow border-t z-10">
     <div class="flex justify-around py-2 text-sm text-gray-500">
-      <button onclick="switchPage('home')" id="nav-home" class="flex flex-col items-center gap-1 active-nav">
+      <a href="index.html" class="flex flex-col items-center gap-1 text-brand font-semibold">
         <span>🏠</span>
         <span>Home</span>
-      </button>
-      <button onclick="switchPage('shop')" id="nav-shop" class="flex flex-col items-center gap-1">
+      </a>
+      <a href="shop.html" class="flex flex-col items-center gap-1">
         <span>🛍️</span>
         <span>Shop</span>
-      </button>
-      <button onclick="switchPage('account')" id="nav-account" class="flex flex-col items-center gap-1">
+      </a>
+      <a href="account.html" class="flex flex-col items-center gap-1">
         <span>👤</span>
         <span>Account</span>
-      </button>
+      </a>
     </div>
   </nav>
+
+
 
   <!-- JS for Navigation -->
   <script>
