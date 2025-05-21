@@ -98,23 +98,41 @@
     <p class="text-sm mt-2">Manage your reservations and profile.</p>
   </div>
 
-  <!-- Bottom Navigation (with redirects) -->
-  <nav class="fixed bottom-0 left-0 right-0 bg-white shadow border-t z-10">
-    <div class="flex justify-around py-2 text-sm text-gray-500">
-      <a href="index.html" class="flex flex-col items-center gap-1 text-brand font-semibold">
-        <span>🏠</span>
-        <span>Home</span>
-      </a>
-      <a href="shop.html" class="flex flex-col items-center gap-1">
-        <span>🛍️</span>
-        <span>Shop</span>
-      </a>
-      <a href="account.html" class="flex flex-col items-center gap-1">
-        <span>👤</span>
-        <span>Account</span>
-      </a>
-    </div>
+
+ <!-- Bottom Navigation (REI-style mimic with Christy colors) -->
+<footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-inner z-10">
+  <nav class="flex justify-around items-center py-2 text-sm text-gray-500">
+    
+    <a href="index.html" class="flex flex-col items-center gap-1 text-brand font-semibold">
+      <span>🏠</span>
+      <span>Home</span>
+    </a>
+
+    <a href="shop.html" class="flex flex-col items-center gap-1">
+      <span>🛍️</span>
+      <span>Shop</span>
+    </a>
+
+    <a href="#" class="flex flex-col items-center gap-1">
+      <span>📍</span>
+      <span>Stores</span>
+    </a>
+
+    <a href="#" class="flex flex-col items-center gap-1">
+      <span>🛒</span>
+      <span>Cart</span>
+    </a>
+
+    <a href="account.html" class="relative flex flex-col items-center gap-1">
+      <span>👤</span>
+      <span>Account</span>
+      <!-- Red notification dot -->
+      <span class="absolute -top-0.5 right-2 inline-block w-2 h-2 bg-red-500 rounded-full"></span>
+    </a>
+
   </nav>
+</footer>
+
 
 
 

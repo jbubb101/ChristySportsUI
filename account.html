@@ -26,9 +26,18 @@
 <!-- Header with Logo -->
 <header class="bg-brand text-white py-4 shadow relative">
   <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
-    <img src="static/christy-logo.png" alt="Christy Sports Logo" class="h-8 w-auto">
+    <img src="static/Christy-Sports-logo.png" alt="Christy Sports Logo" class="h-8 w-auto">
   </div>
   <h1 class="text-xl font-bold text-center">My Account</h1>
+
+    <!-- Scan Icon Button -->
+    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white" aria-label="Scan">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 7V5a2 2 0 012-2h2M21 7V5a2 2 0 00-2-2h-2M3 17v2a2 2 0 002 2h2M21 17v2a2 2 0 01-2 2h-2M7 12h10" />
+      </svg>
+    </button>
 </header>
 
 
@@ -73,9 +82,99 @@
       </div>
     </div>
 
+    <!-- Purchases and Preferences Section -->
+    <div class="mt-6 bg-gray-50 rounded-xl p-4 space-y-4 shadow-sm">
+
+      <h3 class="text-base font-semibold text-gray-700">Purchases and preferences</h3>
+
+      <!-- Purchase History -->
+      <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+        <div class="flex items-center gap-3">
+          <span class="text-brand text-lg">🕒</span>
+          <span class="text-sm font-medium text-gray-800">Purchase history</span>
+        </div>
+        <span class="text-gray-400 text-xl">&rarr;</span>
+      </a>
+
+      <!-- Preferences -->
+      <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+        <div class="flex items-center gap-3">
+          <span class="text-brand text-lg">🛠️</span>
+          <span class="text-sm font-medium text-gray-800">Preferences</span>
+        </div>
+        <span class="text-gray-400 text-xl">&rarr;</span>
+      </a>
+
+      <!-- Returns & Exchanges -->
+      <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+        <div class="flex items-center gap-3">
+          <span class="text-brand text-lg">📦</span>
+          <span class="text-sm font-medium text-gray-800">Returns & exchanges</span>
+        </div>
+        <span class="text-gray-400 text-xl">&rarr;</span>
+      </a>
+
+    </div>
+
+    <!-- Your Lists -->
+<div class="mt-6 bg-gray-50 rounded-xl p-4 space-y-4 shadow-sm">
+  <h3 class="text-base font-semibold text-gray-700">Your Lists</h3>
+
+  <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+    <div class="flex items-center gap-3">
+      <span class="text-brand text-lg">📝</span>
+      <span class="text-sm font-medium text-gray-800">Wish Lists</span>
+    </div>
+    <span class="text-gray-400 text-xl">&rarr;</span>
+  </a>
+
+  <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+    <div class="flex items-center gap-3">
+      <span class="text-brand text-lg">🏠</span>
+      <span class="text-sm font-medium text-gray-800">Saved for later</span>
+    </div>
+    <span class="text-gray-400 text-xl">&rarr;</span>
+  </a>
+</div>
+
+<!-- Help & Feedback -->
+<div class="mt-6 bg-gray-50 rounded-xl p-4 space-y-4 shadow-sm">
+  <h3 class="text-base font-semibold text-gray-700">Help & feedback</h3>
+
+  <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+    <span class="text-sm font-medium text-gray-800">Need help?</span>
+    <span class="text-gray-400 text-xl">&rarr;</span>
+  </a>
+
+  <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+    <span class="text-sm font-medium text-gray-800">Contact Christy Sports</span>
+    <span class="text-gray-400 text-xl">&rarr;</span>
+  </a>
+
+  <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+    <span class="text-sm font-medium text-gray-800">Send us feedback</span>
+    <span class="text-gray-400 text-xl">&rarr;</span>
+  </a>
+
+  <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+    <span class="text-sm font-medium text-gray-800">Privacy policy</span>
+    <span class="text-gray-400 text-xl">&rarr;</span>
+  </a>
+
+  <a href="#" class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm border hover:bg-gray-50">
+    <span class="text-sm font-medium text-gray-800">Health Data Privacy Policy</span>
+    <span class="text-gray-400 text-xl">&rarr;</span>
+  </a>
+</div>
+
+<!-- App Version -->
+<p class="text-xs text-gray-400 text-center mt-6 mb-24">v1.0.0</p>
 
 
-  <!-- ✅ Bottom Navigation -->
+
+
+
+  <!-- Bottom Navigation -->
   <footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-inner">
     <div class="flex justify-around py-2 text-sm text-gray-500">
       <a href="index.html" class="flex flex-col items-center gap-1">
@@ -86,9 +185,18 @@
         <span>🛍️</span>
         <span>Shop</span>
       </a>
-      <a href="account.html" class="flex flex-col items-center gap-1 text-brand font-semibold">
+      <a href="stores.html" class="flex flex-col items-center gap-1 text-brand font-semibold">
+        <span>📍</span>
+        <span>Stores</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-1">
+        <span>🛒</span>
+        <span>Cart</span>
+      </a>
+      <a href="account.html" class="flex flex-col items-center gap-1 relative">
         <span>👤</span>
         <span>Account</span>
+        <span class="absolute -top-0.5 right-2 inline-block w-2 h-2 bg-red-500 rounded-full"></span>
       </a>
     </div>
   </footer>

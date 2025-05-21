@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christy Sports – Stores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#1e3a8a', // Christy Blue
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 pb-20">
+
+  <!-- Header -->
+  <header class="bg-brand text-white text-center py-4 shadow">
+    <h1 class="text-xl font-bold">Store Locations</h1>
+  </header>
+
+  <!-- Search -->
+  <div class="px-4 mt-4">
+    <input type="text" placeholder="Search by ZIP or city/state"
+           class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm shadow-sm focus:outline-none focus:ring focus:border-brand" />
+  </div>
+
+  <!-- Curbside Pickup Notice -->
+  <div class="mt-4 mx-4 p-4 bg-blue-50 border border-blue-100 rounded-lg shadow-sm text-sm text-brand font-medium">
+    Curbside Pickup<br>
+    <span class="text-gray-700 font-normal">Most Christy Sports locations now offer Curbside Pickup.</span>
+  </div>
+
+  <!-- Store List -->
+  <div class="mt-6 space-y-6 px-4 text-sm">
+    <div>
+      <div class="flex justify-between font-bold text-gray-800">
+        <span>Greenwood Village</span>
+        <span class="text-sm text-gray-600">2.7 mi</span>
+      </div>
+      <p class="text-gray-600">9000 E Peakview Ave Greenwood Village, CO</p>
+      <ul class="mt-1">
+        <li class="text-green-600">✔ In-store shopping</li>
+        <li class="text-green-600">✔ Curbside pickup</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="flex justify-between font-bold text-gray-800">
+        <span>Lakewood</span>
+        <span class="text-sm text-gray-600">8.7 mi</span>
+      </div>
+      <p class="text-gray-600">5375 S Wadsworth Blvd Lakewood, CO</p>
+      <ul class="mt-1">
+        <li class="text-green-600">✔ In-store shopping</li>
+        <li class="text-green-600">✔ Curbside pickup</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="flex justify-between font-bold text-gray-800">
+        <span>Denver Flagship</span>
+        <span class="text-sm text-gray-600">10.3 mi</span>
+      </div>
+      <p class="text-gray-600">1416 Platte St Denver, CO</p>
+      <ul class="mt-1">
+        <li class="text-green-600">✔ In-store shopping</li>
+        <li class="text-green-600">✔ Curbside pickup</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="flex justify-between font-bold text-gray-800">
+        <span>Boulder</span>
+        <span class="text-sm text-gray-600">32.7 mi</span>
+      </div>
+      <p class="text-gray-600">1789 28th St Boulder, CO 80301</p>
+      <ul class="mt-1">
+        <li class="text-green-600">✔ In-store shopping</li>
+        <li class="text-green-600">✔ Curbside pickup</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="flex justify-between font-bold text-gray-800">
+        <span>Colorado Springs</span>
+        <span class="text-sm text-gray-600">47.9 mi</span>
+      </div>
+      <p class="text-gray-600">1376 E Woodmen Rd Colorado Springs, CO</p>
+      <ul class="mt-1">
+        <li class="text-green-600">✔ In-store shopping</li>
+        <li class="text-red-500">✖ Curbside pickup</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="flex justify-between font-bold text-gray-800">
+        <span>Loveland</span>
+        <span class="text-sm text-gray-600">54.6 mi</span>
+      </div>
+      <p class="text-gray-600">1605 FALL RIVER DR LOVELAND, CO</p>
+      <ul class="mt-1">
+        <li class="text-green-600">✔ In-store shopping</li>
+        <li class="text-red-500">✖ Curbside pickup</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-inner">
+    <div class="flex justify-around py-2 text-sm text-gray-500">
+      <a href="index.html" class="flex flex-col items-center gap-1">
+        <span>🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="shop.html" class="flex flex-col items-center gap-1">
+        <span>🛍️</span>
+        <span>Shop</span>
+      </a>
+      <a href="stores.html" class="flex flex-col items-center gap-1 text-brand font-semibold">
+        <span>📍</span>
+        <span>Stores</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-1">
+        <span>🛒</span>
+        <span>Cart</span>
+      </a>
+      <a href="account.html" class="flex flex-col items-center gap-1 relative">
+        <span>👤</span>
+        <span>Account</span>
+        <span class="absolute -top-0.5 right-2 inline-block w-2 h-2 bg-red-500 rounded-full"></span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
